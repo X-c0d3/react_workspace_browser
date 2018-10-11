@@ -15,7 +15,8 @@ class EditComponent extends React.Component {
 
         this.props.dispatch({
             type: 'UPDATE_DATA',
-            data
+            id: this.props.comment.id,
+            data: data
         });
 
     }
@@ -23,7 +24,7 @@ class EditComponent extends React.Component {
         return (<div>
             <form onSubmit={this.handleSubmit}>
                 <input required type="text" placeholder="Enter Name" ref={(input) => this.getName = input} defaultValue={this.props.component.name} /> <br /> <br />
-                <textarea required rows="5" cols="28" placeholder="Text" ref={(input) => this.getMessage = input} defaultValue={this.props.component.message}/><br /> <br />
+                <textarea required rows="5" cols="28" placeholder="Text" ref={(input) => this.getMessage = input} defaultValue={this.props.component.message} /><br /> <br />
                 <button>Update</button>
             </form>
         </div>

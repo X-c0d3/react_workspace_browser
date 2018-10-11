@@ -11,7 +11,8 @@ class CommentForm extends React.Component {
         const data = {
             id: new Date(),
             name,
-            message
+            message,
+            editing: false
         }
 
         this.props.dispatch({
@@ -36,5 +37,5 @@ class CommentForm extends React.Component {
     }
 }
 
-//Connect
+// Connect
 export default connect()(CommentForm);
