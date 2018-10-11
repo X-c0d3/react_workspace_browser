@@ -1,10 +1,15 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import UserComponent from './components/UserComponent';
+import CommentForm from './components/CommentForm';
+import ShowComment from './components/showcomment';
+import { createStore } from 'redux'
+
+
 ReactDOM.render(
     <div>
         <h1>Workspace Browser - POC</h1>
-        <UserComponent name='Watchara' age={105} address='get me if you can' telephone='0840810033' />
+        <CommentForm/>
+        <ShowComment/>
     </div>,
     document.getElementById('root')
 );

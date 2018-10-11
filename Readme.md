@@ -12,6 +12,8 @@ npm install --save-dev nodemon webpack-dev-server
 
 npm i style-loader css-loader sass-loader --save-dev
 
+npm i redux react-redux @types/redux @types/react-redux --save
+
 
 Font-end
 npm i bootstrap @types/bootstrap react-bootstrap @types/react-bootstrap --save-dev
